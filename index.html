@@ -6,39 +6,310 @@
     <title>Landing page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="#">shop</a>
-            <a href="#">mission</a> 
-            <a href="#" class="logo">LOGO</a>
+            <div class="nav-inner">
+                <div class="nav-left">
+                    <a href="#">shop</a>
+                    <a href="#">mission</a>
+                </div>
+                <a href="#" class="logo">LOGO</a>
+                <div class="nav-right"></div>
+            </div>
         </nav>
     </header>
     <section class="hero">
         <img src="assets/main.jpg" alt="Hero" class="hero-bg">
         <div class="hero-text">
-            <h1 class="tagline">new year, new "you" <br>with <span class="product-name">[product name]</span></h1>
+            <h1 class="tagline">new year, new "you" <br>with product</h1>
             <button class="cta-btn">Try product</button>
         </div>
     </section>
-    <section class="features">
-        <div class="feature-card">
-            <span class="icon">🌙</span>
-            <span>Improves sleep</span>
-        </div>
-        <div class="feature-card">
-            <span class="icon">🏋️‍♂️</span>
-            <span>Boosts immune system</span>
-        </div>
-        <div class="feature-card">
-            <span class="icon">🧘‍♀️</span>
-            <span>Enhances strength</span>
-        </div>
-        <div class="feature-card">
-            <span class="icon">🌳</span>
-            <span>Improves digestion</span>
-        </div>
-    </section>
+    <div class="main-container">
+        <section class="features">
+            <div class="feature-card">
+                <span class="icon"><img src="assets/features/Vector.png" alt="Improves sleep icon"></span>
+                <span>Improves sleep</span>
+            </div>
+            <div class="feature-card">
+                <span class="icon"><img src="assets/features/Vector-1.png" alt="Boosts immune system icon"></span>
+                <span>Boosts immune system</span>
+            </div>
+            <div class="feature-card">
+                <span class="icon"><img src="assets/features/Vector-2.png" alt="Enhances strength icon"></span>
+                <span>Enhances strength</span>
+            </div>
+            <div class="feature-card">
+                <span class="icon"><img src="assets/features/Ñëîé 1.png" alt="Improves digestion icon"></span>
+                <span>Improves digestion</span>
+            </div>
+        </section>
+        <section class="subscribe-banner">
+            <div class="subscribe-title">subscribe & save</div>
+            <div class="subscribe-details">
+                <div>delivery every<br>30 days</div>
+                <div>best value<br>per box</div>
+                <div>no commitment,<br>cancel anytime</div>
+            </div>
+        </section>
+        <section class="performance-banner">
+            <div class="performance-title">
+                Performance nutrition and healthy transformation made simple:
+            </div>
+            <div class="performance-features">
+                <div class="performance-feature">
+                    <img src="assets/performance/Group 143.svg" alt="Endurance icon">
+                    <div>
+                        Enhance <strong>endurance, performance,</strong> and exercise <strong>recovery</strong>
+                    </div>
+                </div>
+                <div class="performance-feature">
+                    <img src="assets/performance/Vector.png" alt="Jitter-free icon">
+                    <div>
+                        Enjoy jitter-free <strong>energy</strong> to tackle your busy schedule
+                    </div>
+                </div>
+                <div class="performance-feature">
+                    <img src="assets/performance/shield-virus-solid 1.svg" alt="Immune icon">
+                    <div>
+                        Strengthen your <strong>immune health</strong> to stay on your game
+                    </div>
+                </div>
+                <div class="performance-feature">
+                    <img src="assets/performance/Vector.svg" alt="Taste icon">
+                    <div>
+                        <strong>Tastes amazing!</strong> No bitterness, gritty, or clumpy texture
+                    </div>
+                </div>
+                <div class="performance-feature">
+                    <img src="assets/performance/Group 142.svg" alt="30 sec habit icon">
+                    <div>
+                        <strong>30 sec habit.</strong> Mixes in any beverage fast and easy
+                    </div>
+                </div>
+                <div class="performance-feature">
+                    <img src="assets/performance/Group 145.svg" alt="Metabolism icon">
+                    <div>
+                        Recharged <strong>metabolism</strong> to stay in peak shape
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="usda-banner">
+            <div class="usda-content">
+                <img src="assets/usda/usda-organic-logo.png" alt="USDA Organic" class="usda-logo">
+                <div class="usda-text">
+                    only exceptional USDA certified organic sustainable sourced ingredients qualify.
+                </div>
+            </div>
+        </section>
+        <section class="reds-blend">
+            <div class="reds-content">
+                <div class="reds-title">
+                    <span class="reds-red">reds</span> <span class="reds-bold">blend</span>
+                </div>
+                <div class="reds-left">
+                    <div class="reds-subtitle">Metabolism Boosting</div>
+                    <div class="reds-desc">
+                        These powerful superfoods ignite your metabolism and reduce bloating. They improve digestion and deliver the energy you need to get things done.
+                    </div>
+                    <div class="reds-ingredients-title">Main Organic Ingredients:</div>
+                    <ul class="reds-ingredients-list">
+                        <li>organic acai berry</li>
+                        <li>organic acacia gum</li>
+                        <li>organic ceylon cinnamon bark</li>
+                        <li>organic green tea</li>
+                    </ul>
+                </div>
+                <div class="reds-right">
+                    <div class="reds-ingredients-carousel">
+                        <!-- Slide 1: All ingredients -->
+                        <div class="carousel-slide active">
+                            <div class="reds-carousel-slider__grid">
+                                <div class="reds-carousel-slider__item">
+                                    <img src="assets/ingredients/acai_berry-removebg-preview.png" alt="acai berry">
+                                    <div class="reds-carousel-slider__caption">organic acai berry</div>
+                                </div>
+                                <div class="reds-carousel-slider__item">
+                                    <img src="assets/ingredients/reishi-shutterstock_1924360820_1-removebg-preview.png" alt="acacia gum">
+                                    <div class="reds-carousel-slider__caption">organic acacia gum</div>
+                                </div>
+                                <div class="reds-carousel-slider__item">
+                                    <img src="assets/ingredients/reishi-shutterstock_1924360820_1-1-removebg-preview.png" alt="ceylon cinnamon bark">
+                                    <div class="reds-carousel-slider__caption">organic ceylon cinnamon bark</div>
+                                </div>
+                                <div class="reds-carousel-slider__item">
+                                    <img src="assets/ingredients/reishi-shutterstock_1924360820_1-2.png" alt="green tea">
+                                    <div class="reds-carousel-slider__caption">organic green tea</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2: Acai berry -->
+                        <div class="carousel-slide">
+                            <img class="carousel-img" src="assets/ingredients/acai_berry-removebg-preview.png" alt="acai berry">
+                            <div class="carousel-caption"><strong>Organic Acai Berry</strong><br>Rich in antioxidants, supports heart health and boosts energy.</div>
+                        </div>
+                        <!-- Slide 3: Acacia gum -->
+                        <div class="carousel-slide">
+                            <img class="carousel-img" src="assets/ingredients/reishi-shutterstock_1924360820_1-removebg-preview.png" alt="acacia gum">
+                            <div class="carousel-caption"><strong>Organic Acacia Gum</strong><br>Natural prebiotic fiber, aids digestion and gut health.</div>
+                        </div>
+                        <!-- Slide 4: Ceylon cinnamon bark -->
+                        <div class="carousel-slide">
+                            <img class="carousel-img" src="assets/ingredients/reishi-shutterstock_1924360820_1-1-removebg-preview.png" alt="ceylon cinnamon bark">
+                            <div class="carousel-caption"><strong>Organic Ceylon Cinnamon Bark</strong><br>Helps regulate blood sugar and has anti-inflammatory properties.</div>
+                        </div>
+                        <!-- Slide 5: Green tea -->
+                        <div class="carousel-slide">
+                            <img class="carousel-img" src="assets/ingredients/reishi-shutterstock_1924360820_1-2.png" alt="green tea">
+                            <div class="carousel-caption"><strong>Organic Green Tea</strong><br>Boosts metabolism, rich in polyphenols and supports focus.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reds-carousel">
+                <span class="arrow" id="carousel-prev">&#60;</span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="arrow" id="carousel-next">&#62;</span>
+            </div>
+            <button class="reds-cart-btn">add to cart</button>
+        </section>
+
+        <!-- meticulous methodical process section -->
+        <section class="process-section">
+            <h2 class="process-title">Meticulous Methodical Process</h2>
+            <div class="process-timeline">
+                <!-- Step 1: Mission (left) -->
+                <div class="process-step-content process-step-content-left" style="grid-row: 1;">
+                    <div class="process-step-label"><strong>Mission</strong></div>
+                    <div class="process-step-desc">
+                        our team of researchers are working around the clock to uncover the best performance and health-boosting superfoods on the planet. we do the homework so you don’t have to. each superfood is supported by strong clinical studies.
+                    </div>
+                </div>
+                <div class="process-step-icon" style="grid-row: 1;">
+                    <img src="assets/process/hand icon.svg" alt="hand icon">
+                </div>
+
+                <!-- Step 2: The problem (right) -->
+                <div></div>
+                
+                <div class="process-step-content process-step-content-right" style="grid-row: 2;">
+                    <div class="process-step-label"><strong>The problem</strong></div>
+                    <div class="process-step-desc">
+                        our advisory panel reviews all of the scientific research in detail. each ingredient must pass the rigorous approval process. once approved, only then do our formulas move on to production.
+                    </div>
+                </div>
+                <div class="process-step-icon" style="grid-row: 2;">
+                    <img src="assets/process/exclamation.png" alt="exclamation icon">
+                </div>
+
+                <!-- Step 3: That isn’t therapeutic (left) -->
+                <div class="process-step-content process-step-content-left" style="grid-row: 3;">
+                    <div class="process-step-label"><strong>That isn’t therapeutic</strong></div>
+                    <div class="process-step-desc">
+                        production takes place in our gmp-compliant, state of the art manufacturing facility. once again, only using 100% organic ingredients that have been verified by the usda.
+                    </div>
+                </div>
+                <div class="process-step-icon" style="grid-row: 3;">
+                    <img src="assets/process/heart-solid 1.svg" alt="heart icon">
+                </div>
+                <!-- Step 4: The result (right) -->
+                <div></div>
+                <div class="process-step-content process-step-content-right" style="grid-row: 4;">
+                    <div class="process-step-label"><strong>The result</strong></div>
+                    <div class="process-step-desc">
+                        getting our formulas into the hands of people who need it most and transforming lives for the better. we believe in improving humankind by improving human performance. and that starts with nourishing your body with the right fuel.
+                    </div>
+                </div>
+
+                <!-- Step 5: Running man icon only (bottom) -->
+                <div></div>
+                <div class="process-step-icon" style="grid-row: 5;">
+                    <img src="assets/process/person-running-solid (1) 1.png" alt="running man icon">
+                </div>
+            </div>
+            <div class="process-dietary-row">
+                <div class="dietary-item">
+                    <img src="assets/dietary/vegan-symbol 1.png" alt="vegan">
+                    <div>vegan</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector.png" alt="gluten free">
+                    <div>gluten<br>free</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/no-milk 1.png" alt="dairy free">
+                    <div>dairy<br>free</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector-1.png" alt="non gmo">
+                    <div>non<br>gmo</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector-2.png" alt="soy free">
+                    <div>soy<br>free</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector-3.png" alt="nut free">
+                    <div>nut<br>free</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector-4.png" alt="shellfish free">
+                    <div>shellfish<br>free</div>
+                </div>
+                <div class="dietary-item">
+                    <img src="assets/dietary/Vector-5.png" alt="sesame free">
+                    <div>sesame<br>free</div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h2>FAQs</h2>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What are the Effective ingredients in Trumeta Reds?
+                    <img src="assets/arrow-down.png" class="faq-arrow" alt="arrow">
+                </button>
+                <div class="faq-answer">
+                    Trumeta Reds contains 3 blends and 25 vitality-boosting superfoods...
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is Trumeta Reds vegan?
+                    <img src="assets/arrow-down.png" class="faq-arrow" alt="arrow">
+                </button>
+                <div class="faq-answer">
+                    Yes, Trumeta Reds is 100% vegan and plant-based.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Other questions?
+                    <img src="assets/arrow-down.png" class="faq-arrow" alt="arrow">
+                </button>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quasi odio vel eligendi repellendus quaerat sequi doloribus. Dolorum beatae corrupti nemo vel, repudiandae labore sunt, repellendus voluptates, ipsum aspernatur quae.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Other questions?
+                    <img src="assets/arrow-down.png" class="faq-arrow" alt="arrow">
+                </button>
+                <div class="faq-answer">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laudantium modi enim incidunt delectus fuga facilis fugiat? Dolor accusamus aliquam atque velit cumque vel debitis autem quia, expedita dolores est!
+                </div>        
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
 
