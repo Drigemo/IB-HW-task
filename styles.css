@@ -1,12 +1,11 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #fff; /* Changed from #ededed to #fff */
+    background: #fff;
     box-sizing: border-box;
-    overflow-x: auto;
+    overflow-x: hidden; 
 }
 
-/* Main content wrapper for 900px layout */
 .main-container {
     max-width: 900px;
     margin: 0 auto;
@@ -16,7 +15,6 @@ body {
     position: relative;
 }
 
-/* All full-width sections should be 100% of .main-container */
 header,
 .features,
 .subscribe-banner,
@@ -33,7 +31,6 @@ header,
     background: inherit;
 }
 
-/* Remove any previous max-widths on sections and set to 900px */
 .performance-features,
 .reds-content,
 .usda-content,
@@ -125,7 +122,7 @@ header,
 }
 
 .feature-card {
-    background: #fdeaea; /* Keep pink background */
+    background: #fdeaea;
     border-radius: 16px;
     padding: 18px 28px;
     display: flex;
@@ -154,7 +151,7 @@ header {
 }
 
 nav {
-    width: 100%; /* Changed from 100vw */
+    width: 100%;
     position: relative;
     background: #fff;
 }
@@ -240,7 +237,7 @@ nav a:hover {
 .usda-banner {
     background: #f7f7f7;
     padding: 32px 0;
-    width: 100%; /* Changed from 100vw */
+    width: 100%;
     position: relative;
     z-index: 10;
 }
@@ -273,7 +270,7 @@ nav a:hover {
     text-align: center;
     padding: 16px 0 12px 0;
     position: relative;
-    width: 100%; /* Changed from 100vw */
+    width: 100%;
     z-index: 10;
 }
 
@@ -297,8 +294,8 @@ nav a:hover {
 
 .reds-blend {
     background: #faeaea;
-    padding: 24px 0 45px 0; 
-    width: 100%; /* Changed from 100vw */
+    padding: 24px 0 45px 0;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
 }
@@ -319,7 +316,7 @@ nav a:hover {
     max-width: 380px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* <-- aligns content to the left */
+    align-items: flex-start;
     text-align: left;
 }
 
@@ -381,13 +378,12 @@ nav a:hover {
 }
 
 .reds-ingredients-images img {
-    width: 80px;   /* Reduce width */
-    height: 60px;  /* Reduce height */
+    width: 80px;
+    height: 60px;
     object-fit: contain;
     display: block;
     margin: 0 auto 6px auto;
 }
-
 
 .caption {
     font-size: 0.95rem;
@@ -435,11 +431,9 @@ nav a:hover {
     left: unset;
     bottom: unset;
     transform: none;
-    margin: 32px auto 0 auto; /* Add margin for spacing */
+    margin: 32px auto 0 auto;
     display: block;
 }
-
-
 
 .reds-ingredients-carousel {
     position: relative;
@@ -512,7 +506,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* Process Section */
 .process-section {
     max-width: 900px;
     margin: 24px auto 0 auto;
@@ -553,7 +546,6 @@ nav a:hover {
     justify-content: center;
     margin: 0 auto;
     z-index: 2;
-    /* Add vertical lines above and below each icon */
 }
 .process-step-icon::before,
 .process-step-icon::after {
@@ -603,8 +595,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-
-/* Dietary Icons Row */
 .process-dietary-row {
     display: flex;
     justify-content: center;
@@ -616,8 +606,8 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
     max-width: 900px;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    overflow-x: auto;  /* Allow horizontal scroll if needed */
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 .dietary-item {
     display: flex;
@@ -659,7 +649,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-/* Timeline step alignment */
 .process-step {
     display: flex;
     align-items: flex-start;
@@ -688,19 +677,16 @@ nav a:hover {
     margin-left: auto;
 }
 
-/* Remove default alternating alignment from nth-child */
 .process-step-content {
     flex: 1;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    /* Remove align-items and text-align here, handled by .process-align-* */
 }
 .process-step:last-child .process-step-icon {
     margin-bottom: 32px;
 }
 
-/* Mission step icon special positioning and connector */
 .process-step-icon--mission {
     position: relative;
     z-index: 2;
@@ -714,14 +700,12 @@ nav a:hover {
     height: 2px;
     background: #ededed;
     transform: translateX(-10px);
-    /* Adjust -10px to fine-tune horizontal alignment */
 }
 .process-step-icon--mission img {
     position: relative;
     z-index: 2;
 }
 
-/* Align the icon to the right of the box and bottom-aligned */
 .process-step-icon--mission {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -744,16 +728,16 @@ nav a:hover {
     object-fit: contain;
 }
 
-/* FAQ Section */
 .faq-section {
     max-width: 700px;
     margin: 48px auto;
     padding: 0 16px;
-    text-align: center; /* Center FAQ content */
+    text-align: center;
 }
 .faq-item {
     margin-left: auto;
     margin-right: auto;
+    max-width: 700px;
     width: 100%;
     border-bottom: 1px solid #eee;
     margin-bottom: 8px;
@@ -772,6 +756,8 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 24px;
+    box-sizing: border-box;
 }
 .faq-question.active {
     color: #d32f2f;
@@ -781,6 +767,7 @@ nav a:hover {
     height: 15px;
     margin-left: 12px;
     transition: transform 0.2s;
+    flex-shrink: 0;
 }
 .faq-question.active .faq-arrow,
 .faq-item.open .faq-arrow {
@@ -795,7 +782,6 @@ nav a:hover {
 .faq-item.open .faq-answer {
     display: block;
 }
-
 
 @media (max-width: 900px) {
     .main-container,
@@ -834,7 +820,6 @@ nav a:hover {
 @media (max-width: 600px) {
   body {
     background: #ededed;
-    /* Remove max-width and overflow-x hidden if present */
   }
   .main-container {
     max-width: 100vw;
@@ -863,7 +848,7 @@ nav a:hover {
   }
 
   .hero {
-    height: 320px; /* Increased from 180px */
+    height: 320px;
     min-height: unset;
   }
   .hero-bg,
@@ -885,19 +870,18 @@ nav a:hover {
     bottom: 24px;
   }
 
-  /* Features as 2x2 grid */
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
     width: 100vw;
-    padding: 0 8px; /* Add horizontal padding */
+    padding: 0 8px;
     margin: 0;
     box-shadow: none;
     box-sizing: border-box;
   }
   .feature-card {
-    width: 100%; /* Changed from 100vw */
+    width: 100%;
     min-width: 0;
     font-size: 0.95rem;
     padding: 18px 0 10px 0;
@@ -922,7 +906,6 @@ nav a:hover {
     height: 36px;
   }
 
-  /* Subscribe banner as vertical bar with rotated text */
   .subscribe-banner {
     background: #131112;
     color: #fff;
@@ -961,7 +944,6 @@ nav a:hover {
     font-size: 0.92rem;
   }
 
-  /* Performance features as vertical list */
   .performance-banner {
     padding: 10px 0 8px 0;
   }
@@ -998,7 +980,6 @@ nav a:hover {
     margin-right: 8px;
   }
 
-  /* USDA banner */
   .usda-banner {
     padding: 16px 0;
     width: 100vw;
@@ -1024,14 +1005,13 @@ nav a:hover {
     padding: 0 8px;
   }
 
-  /* Reds blend section */
   .reds-blend {
-    padding: 12px 0 12px 0; /* Reduce bottom padding */
+    padding: 12px 0 12px 0;
     width: 100vw;
   }
   .reds-content {
     flex-direction: column;
-    gap: 8px; /* Reduce gap */
+    gap: 8px;
     padding: 0 8px;
     max-width: 100vw;
     align-items: center;
@@ -1079,10 +1059,10 @@ nav a:hover {
   .reds-cart-btn {
     width: 90vw;
     font-size: 1rem;
-    margin: 8px auto 0 auto; /* Reduce space above button */
+    margin: 8px auto 0 auto;
   }
   .reds-ingredients-carousel {
-    min-height: 0 !important; /* Remove fixed min-height */
+    min-height: 0 !important;
     height: auto !important;
     padding-bottom: 0;
   }
@@ -1095,7 +1075,6 @@ nav a:hover {
     gap: 8px 8px;
   }
 
-  /* Process section */
   .process-section {
     padding: 0 2px 8px 2px;
     max-width: 100vw;
@@ -1146,7 +1125,6 @@ nav a:hover {
     min-width: 38px;
   }
 
-  /* FAQ section */
   .faq-section {
     padding: 0 4px;
     max-width: 100vw;
@@ -1165,3 +1143,27 @@ nav a:hover {
     padding: 0 0 12px 0;
   }
 }
+  
+  .dietary-item {
+    font-size: 0.8rem;
+    min-width: 38px;
+  }
+
+  .faq-section {
+    padding: 0 4px;
+    max-width: 100vw;
+    margin: 24px 0 0 0;
+  }
+  .faq-item {
+    width: 100vw;
+    padding: 0;
+  }
+  .faq-question {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+  .faq-answer {
+    font-size: 0.95rem;
+    padding: 0 0 12px 0;
+  }
+
